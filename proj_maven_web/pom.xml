@@ -10,7 +10,7 @@
   <packaging>war</packaging>
 
 
-<distributionManagement>
+  <distributionManagement>
     <repository>
       <id>nexus</id>
       <name>Releases</name>
