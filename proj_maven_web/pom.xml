@@ -16,11 +16,13 @@
       <name>Releases</name>
       <url>http://localhost:8081/repository/maven-releases</url>
     </repository>
+    
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
       <url>http://localhost:8081/repository/maven-snapshots</url>
     </snapshotRepository>
+    
   </distributionManagement>
 
   <name>proj_maven_web Maven Webapp</name>
@@ -32,6 +34,30 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  
+  <profiles>
+  	<profile>
+  		<id>idom</id>
+  		<activation>
+  			<activeByDefault>true</activeByDefault>
+  		</activation>
+  		
+  		<distributionManagement>
+	  		<repository>
+				<id>idom</id>
+				<name>Releases</name>
+				<url>http://localhost:8081/repository/idom</url>
+		    </repository>
+		    <snapshotRepository>
+		      <id>idom</id>
+		      <name>Snapshot</name>
+		      <url>http://localhost:8081/repository/idom-snapshots</url>
+		    </snapshotRepository>
+  		</distributionManagement>  	
+  	</profile> 
+  </profiles>
+  
+  
 
   <dependencies>
     <dependency>
