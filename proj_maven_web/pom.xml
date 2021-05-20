@@ -49,7 +49,7 @@
 				<url>http://localhost:8081/repository/idom</url>
 		    </repository>
 		    <snapshotRepository>
-		      <id>idom</id>
+		      <id>idom</id>		      
 		      <name>Snapshot</name>
 		      <url>http://localhost:8081/repository/idom-snapshots</url>
 		    </snapshotRepository>
